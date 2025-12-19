@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  overflow-x: hidden;
+}
+
+/* Skip to Content Link */
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #ff6b35;
+  color: #1e293b;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  z-index: 10000;
+  border-radius: 0 0 8px 0;
+}
+
+.skip-to-content:focus {
+  top: 0;
+  outline: 2px solid #1e293b;
+  outline-offset: 2px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+/* -----Consolidated all ::selection definitions into a single location. ------*/
+/* Selection Color
+::selection {
+  background: rgba(255, 107, 53, 0.3);
+  color: #1e293b;
+} */
